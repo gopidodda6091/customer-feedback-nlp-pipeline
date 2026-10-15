@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      USE_ST_MODEL: "0"   # deterministic HashingEmbedder; no model download in CI
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - name: Install
+        run: make setup-lite PYTHON=python
+      - name: Ruff
+        run: make lint
+      - name: Pytest
+        run: make test
+      - name: Pipeline smoke run (Spark engine, 1k records)
+        run: make pipeline N=1000
