@@ -1,0 +1,31 @@
+topic,text
+billing,I was billed twice for my subscription
+billing,The invoice amount does not match our plan price
+billing,Need a refund for the duplicate charge
+billing,Our billing date and pricing changed after the upgrade
+billing,Question about the subscription invoice and payment
+bug,The page crashes every time I press save
+bug,I get an error message after the update
+bug,Records disappear after I refresh the page
+bug,Server error 500 when I open the screen
+bug,The app throws an exception and data is lost
+feature_request,Please add a dark mode option
+feature_request,Would love bulk edit support
+feature_request,Can you add an integration with Slack
+feature_request,We would like scheduled exports
+feature_request,It would be nice to have more filters
+performance,The page takes forever to load
+performance,Everything is slow during busy hours
+performance,Load time is much faster now
+performance,Sync lags by several minutes
+performance,The response time is really slow
+support,The support agent answered my ticket quickly
+support,Nobody from support replied to me
+support,Chat support helped me with the settings
+support,I was transferred between agents many times
+support,Support team was helpful and polite
+usability,The screen is confusing and hard to navigate
+usability,Setup was intuitive and easy
+usability,Too many clicks to find the settings
+usability,The new layout is clean and simple
+usability,The menu is hard to use
